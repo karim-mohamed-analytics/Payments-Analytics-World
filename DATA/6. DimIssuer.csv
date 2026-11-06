@@ -1,0 +1,27 @@
+﻿IssuerID,IssuerCode,IssuerName,HomeCountryID,IssuerTier
+IssuerID,IssuerCode,IssuerName,HomeCountryID,IssuerTier
+1,ISS-T1-01,Tier1 Bank 1,1,Tier1
+2,ISS-T1-02,Tier1 Bank 2,2,Tier1
+3,ISS-T1-03,Tier1 Bank 3,3,Tier1
+4,ISS-T1-04,Tier1 Bank 4,4,Tier1
+5,ISS-T1-05,Tier1 Bank 5,5,Tier1
+6,ISS-T2-01,Tier2 Bank 1,1,Tier2
+7,ISS-T2-02,Tier2 Bank 2,2,Tier2
+8,ISS-T2-03,Tier2 Bank 3,3,Tier2
+9,ISS-T2-04,Tier2 Bank 4,4,Tier2
+10,ISS-T2-05,Tier2 Bank 5,5,Tier2
+11,ISS-T2-06,Tier2 Bank 6,6,Tier2
+12,ISS-T2-07,Tier2 Bank 7,7,Tier2
+13,ISS-T2-08,Tier2 Bank 8,8,Tier2
+14,ISS-T2-09,Tier2 Bank 9,9,Tier2
+15,ISS-T2-10,Tier2 Bank 10,10,Tier2
+16,ISS-T3-01,Tier3 Bank 1,1,Tier3
+17,ISS-T3-02,Tier3 Bank 2,2,Tier3
+18,ISS-T3-03,Tier3 Bank 3,3,Tier3
+19,ISS-T3-04,Tier3 Bank 4,4,Tier3
+20,ISS-T3-05,Tier3 Bank 5,5,Tier3
+21,ISS-T3-06,Tier3 Bank 6,6,Tier3
+22,ISS-T3-07,Tier3 Bank 7,7,Tier3
+23,ISS-T3-08,Tier3 Bank 8,8,Tier3
+24,ISS-T3-09,Tier3 Bank 9,9,Tier3
+25,ISS-T3-10,Tier3 Bank 10,10,Tier3

@@ -1,0 +1,11 @@
+﻿PaymentMethodID,PaymentMethodName,PaymentMethodType,CardNetwork,Is3DSEligible
+PaymentMethodID,PaymentMethodName,PaymentMethodType,CardNetwork,Is3DSEligible
+1,Visa Credit,Card,Visa,1
+2,Mastercard Credit,Card,Mastercard,1
+3,Visa Debit,Card,Visa,1
+4,Mastercard Debit,Card,Mastercard,1
+5,Amex,Card,Amex,1
+6,Local Wallet A,Wallet,Local,0
+7,Local Wallet B,Wallet,Local,0
+8,International Wallet,Wallet,Local,0
+9,Bank Transfer,BankTransfer,N/A,0
