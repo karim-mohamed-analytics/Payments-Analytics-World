@@ -1,5 +1,4 @@
-﻿
-DeclineReasonID,DeclineReasonCode,DeclineReasonDescription,DeclineCategory,IsRetryable
+﻿DeclineReasonID,DeclineReasonCode,DeclineReasonDescription,DeclineCategory,IsRetryable
 1,D01,Insufficient Funds,Customer,1
 2,D02,Do Not Honor,Customer,0
 3,D03,Suspected Fraud,Risk,0
