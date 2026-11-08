@@ -1,4 +1,4 @@
-﻿CustomerID,CustomerCode,HomeCountryID,CustomerSegment,SignupDate,IsActive
+﻿
 CustomerID,CustomerCode,HomeCountryID,CustomerSegment,SignupDate,IsActive
 1,CUST-0013527,1,Retail,2021-09-15,1
 2,CUST-0068408,1,Retail,2021-11-28,1

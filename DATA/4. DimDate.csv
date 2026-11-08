@@ -1,4 +1,4 @@
-﻿DateID,FullDate,Year,Quarter,MonthNumber,MonthName,DayOfMonth,DayOfWeek,DayName,WeekOfYear,IsWeekend
+﻿
 DateID,FullDate,Year,Quarter,MonthNumber,MonthName,DayOfMonth,DayOfWeek,DayName,WeekOfYear,IsWeekend
 20250106,2025-01-06,2025,1,1,January,6,2,Monday,2,0
 20250107,2025-01-07,2025,1,1,January,7,3,Tuesday,2,0

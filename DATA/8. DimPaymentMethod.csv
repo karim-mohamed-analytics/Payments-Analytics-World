@@ -1,4 +1,4 @@
-﻿PaymentMethodID,PaymentMethodName,PaymentMethodType,CardNetwork,Is3DSEligible
+﻿
 PaymentMethodID,PaymentMethodName,PaymentMethodType,CardNetwork,Is3DSEligible
 1,Visa Credit,Card,Visa,1
 2,Mastercard Credit,Card,Mastercard,1

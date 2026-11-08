@@ -1,4 +1,4 @@
-﻿RefundID,OriginalTransactionID,RefundDateID,MerchantID,PaymentMethodID,RefundDateTime,RefundAmount,RefundAmountUSD,RefundReason,RefundType
+﻿
 RefundID,OriginalTransactionID,RefundDateID,MerchantID,PaymentMethodID,RefundDateTime,RefundAmount,RefundAmountUSD,RefundReason,RefundType
 1,110,20250522,29,1,2025-05-22T06:04:52,36.82,0.44,Customer Request,Full
 2,176,20250531,41,4,2025-05-31T05:07:35,22.27,22.27,Product Return,Partial

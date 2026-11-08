@@ -1,4 +1,4 @@
-﻿TransactionID,TransactionDateID,TransactionDateTime,CustomerID,MerchantID,TransactionCountryID,PaymentMethodID,IssuerID,AcquirerID,RouteID,Amount,CurrencyCode,AmountUSD,TransactionStatus,DeclineReasonID,Is3DSAttempted,Is3DSSuccessful,FraudScore,IsFraudFlagged,IsRetry,OriginalTransactionID,AttemptNumber,ResponseCode
+﻿
 TransactionID,TransactionDateID,TransactionDateTime,CustomerID,MerchantID,TransactionCountryID,PaymentMethodID,IssuerID,AcquirerID,RouteID,Amount,CurrencyCode,AmountUSD,TransactionStatus,DeclineReasonID,Is3DSAttempted,Is3DSSuccessful,FraudScore,IsFraudFlagged,IsRetry,OriginalTransactionID,AttemptNumber,ResponseCode
 1,20250520,2025-05-20T15:17:35,45728,135,4,1,1,6,6,38.87,AED,10.57,Approved,NULL,0,NULL,141,0,0,NULL,1,APPROVED
 10,20250520,2025-05-20T23:13:16,45687,109,8,8,NULL,5,11,19.37,GBP,24.41,Approved,NULL,0,NULL,287,0,0,NULL,1,APPROVED

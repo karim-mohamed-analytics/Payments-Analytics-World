@@ -1,4 +1,4 @@
-﻿MerchantID,MerchantCode,MerchantName,MCC,Industry,HomeCountryID,MerchantSizeSegment,OnboardingDate,IsActive
+﻿
 MerchantID,MerchantCode,MerchantName,MCC,Industry,HomeCountryID,MerchantSizeSegment,OnboardingDate,IsActive
 1,MER-040,Merchant 40,5000,Subscription Services,1,Small,2024-02-05,1
 2,MER-058,Merchant 58,5018,Subscription Services,1,Small,2023-02-27,1

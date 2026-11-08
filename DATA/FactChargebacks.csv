@@ -1,4 +1,4 @@
-﻿ChargebackID,OriginalTransactionID,ChargebackDateID,MerchantID,PaymentMethodID,ChargebackDateTime,ChargebackAmount,ChargebackAmountUSD,ChargebackReasonCategory,ChargebackStatus
+﻿
 ChargebackID,OriginalTransactionID,ChargebackDateID,MerchantID,PaymentMethodID,ChargebackDateTime,ChargebackAmount,ChargebackAmountUSD,ChargebackReasonCategory,ChargebackStatus
 1,177241,20250625,104,4,2025-06-25T12:37:38,67.31,67.31,Consumer Dispute,Lost
 2,82066,20250512,53,3,2025-05-12T11:38:35,100.74,100.74,Fraud,Lost
