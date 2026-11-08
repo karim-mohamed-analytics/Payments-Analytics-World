@@ -1,0 +1,13 @@
+﻿CountryID,CountryCode,CountryName,Region
+1,USA,United States,North America
+2,GBR,United Kingdom,Europe
+3,DEU,Germany,Europe
+4,BRA,Brazil,LATAM
+5,FRA,France,Europe
+6,ESP,Spain,Europe
+7,MEX,Mexico,LATAM
+8,ARE,United Arab Emirates,MENA
+9,ZAF,South Africa,MENA
+10,IND,India,APAC
+11,AUS,Australia,APAC
+12,JPN,Japan,APAC
