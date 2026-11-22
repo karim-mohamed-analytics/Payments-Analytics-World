@@ -1,65 +1,9 @@
 /*
-============================================================
-Project: Payments Analytics World
-Query ID: Q11
-Query Name: Pre-Post Incident Decline Category Analysis
-Category: Approval Rate Investigation
-Tool: SQL Server 2022 - SSMS
-
-Business Question:
-Did the Approval Rate deterioration after April 20, 2025
-coincide with an increase in Technical Declines, or was
-the deterioration mainly associated with other decline
-categories?
-
-Business Objective:
-Compare decline categories before and after the incident
-to determine whether Technical Errors became a more
-significant contributor to the deterioration.
-
-Metrics:
-1. Total Attempts
-2. Total Declines
-3. Approval Rate
-4. Technical Declines
-5. Technical Decline Rate
-6. Customer Declines
-7. Customer Decline Rate
-8. Authentication Declines
-9. Authentication Decline Rate
-10. Risk Declines
-11. Other / Unknown Declines
-
-Grain:
-One row per Incident Period.
-
-Data Sources:
-- dbo.FactTransactions
-- dbo.DimAcquirer
-- dbo.DimRoute
-- dbo.DimDeclineReason
-
-Date Range:
-January 6, 2025 - July 6, 2025
-
-Pre-Incident:
-January 6 - April 19, 2025
-
-Post-Incident:
-April 20 - July 6, 2025
-
-Filters:
-- Acquirer B
-- Acquirer B Overflow Route
-
-Notes:
-- Retries are included.
-- All transaction attempts are included in the
-  denominator of category decline rates.
-- Decline categories are taken from DimDeclineReason.
-- LEFT JOIN is used to preserve all transaction attempts.
-- This analysis identifies associations, not causality.
-============================================================
+-- Q11: Pre-Post Incident Decline Category Analysis (Acquirer B Overflow Route)
+-- Question: was the drop linked to Technical declines or to other categories?
+-- Before: Jan 6 to Apr 19. After: Apr 20 to Jul 6, 2025. Retries are included.
+-- Only Acquirer B Overflow Route. Categories come from DimDeclineReason.
+-- Rate = category declines / all attempts in the period.
 */
 
 -- Step 1: Prepare transactions and classify incident period

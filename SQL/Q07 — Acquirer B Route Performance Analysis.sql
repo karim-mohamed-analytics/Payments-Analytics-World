@@ -1,34 +1,8 @@
 /*
-Project: Payments Analytics World
-Query ID: Q07
-Query Name: Acquirer B Route Performance Analysis
-Category: Approval Rate Investigation
-Tool: SQL Server
-
-Business Question:
-Is Acquirer B's performance deterioration concentrated
-in a specific route or distributed across its routes?
-
-Business Objective:
-Identify the route most strongly associated with
-Acquirer B's post-incident performance deterioration.
-
-Metrics:
-- Total Attempts
-- Approved Attempts
-- Declined Attempts
-- Approval Rate
-- Transaction Mix within Acquirer B
-- Share of Acquirer B Declines
-
-Grain: Period x Route
-Data Source: FactTransactions, DimAcquirer, DimRoute
-
-Notes:
-- Before: Jan 6 - Apr 19, 2025
-- After: Apr 20 - Jul 6, 2025
-- Only Acquirer B transactions are included.
-- Retries are included.
+-- Q07: Acquirer B Route Performance Analysis
+-- Question: is the drop in Acquirer B concentrated in one Route?
+-- Before: Jan 6 to Apr 19. After: Apr 20 to Jul 6, 2025. Retries are included.
+-- Only Acquirer B. Mix and decline share are inside Acquirer B.
 */
 
 WITH RoutePerformance AS

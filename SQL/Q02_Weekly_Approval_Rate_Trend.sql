@@ -1,49 +1,9 @@
 
 /*
-Project: Payments Analytics World
-Query ID: Q02
-Query Name: Weekly Approval Rate Trend
-Category: Failure Isolation
-Tool: SQL Server 2022 (T-SQL)
-
-BUSINESS QUESTION
------------------
-How does the weekly payment approval rate change over time?
-
-BUSINESS OBJECTIVE
-------------------
-Identify weeks with noticeable changes in approval performance
-and narrow down the period for further investigation.
-
-METRICS
--------
-1. Total Attempts
-2. Approved Attempts
-3. Declined Attempts
-4. Approval Rate (%)
-5. Decline Rate (%)
-
-CALCULATION
------------
-Approval Rate = Approved Attempts / Total Attempts * 100
-Decline Rate  = Declined Attempts / Total Attempts * 100
-
-GRAIN
------
-One row per calendar week, starting Monday.
-
-DATA SOURCE
------------
-dbo.FactTransactions
-
-NOTES
------
-- Measures payment attempts, including retries.
-- FirstTransactionDate and LastTransactionDate show the first
-  and last transaction dates observed within each week.
-- The first and last weeks may be partial weeks.
-- Weekly comparisons should account for differences in
-  observation periods and transaction volumes.
+-- Q02: Weekly Approval Rate Trend
+-- Question: which weeks show a change in the approval rate?
+-- Period: Jan 6 to Jul 6, 2025. Retries are included.
+-- Weeks start on Monday. The week of April 14 also includes April 20.
 */
 
 SET DATEFIRST 1; -- Monday is the first day of the week

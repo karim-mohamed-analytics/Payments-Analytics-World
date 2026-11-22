@@ -1,51 +1,11 @@
 /*
-Project: Payments Analytics World
-Query ID: Q05
-Query Name: Post-Incident Declined Transactions Profile
-Category: Failure Isolation
-Tool: SQL Server 2022 (T-SQL)
-
-BUSINESS QUESTION
------------------
-What are the most common characteristics shared by
-declined payment attempts after the suspected incident?
-
-BUSINESS OBJECTIVE
-------------------
-Identify concentrations across payment dimensions
-using actual business names.
-
-PERIOD
-------
-2025-04-20 through 2025-07-06.
-
-METRICS
--------
-1. Declined Attempts
-2. Share of Total Declines (%)
-3. Unknown / Unmapped Attempts
-
-GRAIN
------
-One row per dimension value.
-
-DATA SOURCE
------------
-dbo.FactTransactions
-dbo.DimAcquirer
-dbo.DimCountry
-dbo.DimRoute
-dbo.DimPaymentMethod
-dbo.DimIssuer
-dbo.DimMerchant
-dbo.DimDeclineReason
-
-NOTES
------
-- Retries are included.
-- Each dimension is analyzed independently.
-- LEFT JOIN preserves unmatched transactions.
-- Concentration does not establish causation.
+-- Q05: Post-Incident Declined Transactions Profile
+-- Question: where are the declined attempts concentrated after April 20?
+-- Period: Apr 20 to Jul 6, 2025. Declined attempts only. Retries are included.
+-- Each dimension is analyzed on its own; CROSS APPLY puts all dimensions
+-- in one list. Share = declines / all declines in that dimension.
+-- LEFT JOIN keeps attempts with missing IDs (shown as Unknown ID).
+-- Concentration does not prove the cause.
 */
 
 WITH PostIncidentDeclines AS

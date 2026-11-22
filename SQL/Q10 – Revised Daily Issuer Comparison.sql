@@ -1,57 +1,8 @@
 /*
-============================================================
-Project: Payments Analytics World
-Query ID: Q10
-Query Name: Daily Issuer Performance Comparison
-Category: Approval Rate Investigation
-Tool: SQL Server 2022 - SSMS
-
-Business Question:
-Did the three identified Issuers experience an Approval
-Rate deterioration at approximately the same time?
-
-Business Objective:
-Compare the daily performance of the three Issuers
-side by side to identify whether their deterioration
-was synchronized.
-
-Metrics:
-1. Daily Attempts per Issuer
-2. Daily Approved Attempts per Issuer
-3. Daily Approval Rate per Issuer
-
-Grain:
-One row per day.
-
-Data Source:
-- dbo.FactTransactions
-- dbo.DimAcquirer
-- dbo.DimRoute
-- dbo.DimIssuer
-
-Date Range:
-January 6, 2025 - July 6, 2025
-
-Pre-Incident:
-January 6 - April 19, 2025
-
-Post-Incident:
-April 20 - July 6, 2025
-
-Filters:
-- Acquirer B
-- Acquirer B Overflow Route
-- Tier3 Bank 3
-- Tier2 Bank 3
-- Tier1 Bank 1
-
-Notes:
-- Retries are included.
-- Each Issuer appears in separate columns.
-- Approval Rate is calculated independently
-  for each Issuer.
-- This query identifies timing patterns, not causality.
-============================================================
+-- Q10: Daily Issuer Performance Comparison
+-- Question: did the three Issuers get worse at the same time?
+-- Period: Jan 6 to Jul 6, 2025. Retries are included.
+-- Only Acquirer B Overflow Route. One group of columns per Issuer.
 */
 
 -- Step 1: Prepare filtered transaction data

@@ -1,35 +1,10 @@
 /*
-Project: Payments Analytics World
-Query ID: Q08
-Query Name: Issuer Analysis within Acquirer B Overflow Route
-Category: Approval Rate Investigation
-Tool: SQL Server
-
-Business Question:
-Is the approval rate deterioration within Acquirer B Overflow Route
-associated with specific Issuers or a change in Issuer transaction mix?
-
-Business Objective:
-Distinguish Issuer-level performance deterioration
-from changes in Issuer distribution within the route.
-
-Metrics:
-- Total Attempts
-- Approved Attempts
-- Declined Attempts
-- Approval Rate
-- Issuer Mix
-- Approval Rate Change (pp)
-- Issuer Mix Change (pp)
-
-Grain: Period x Issuer
-Data Source: FactTransactions, DimAcquirer, DimRoute, DimIssuer
-
-Notes:
-- Before: Jan 6 - Apr 19, 2025
-- After: Apr 20 - Jul 6, 2025
-- Acquirer B Overflow Route only.
-- Retries are included.
+-- Q08: Issuer Analysis within Acquirer B Overflow Route
+-- Question: is the drop in this Route linked to specific Issuers
+-- or to a change in the Issuer mix?
+-- Before: Jan 6 to Apr 19. After: Apr 20 to Jul 6, 2025. Retries are included.
+-- Only Acquirer B Overflow Route. Unknown Issuer means no matched
+-- Issuer record; payment type is not inferred from missing Issuer data.
 */
 
 WITH IssuerPerformance AS

@@ -1,48 +1,9 @@
 
 /*
-Project: Payments Analytics World
-Query ID: Q01
-Query Name: Monthly Approval Rate Trend
-Category: Data Profiling
-Tool: SQL Server 2022 (T-SQL)
-
-BUSINESS QUESTION
------------------
-How does the monthly payment approval rate change over time?
-
-BUSINESS OBJECTIVE
-------------------
-Establish a monthly performance baseline and identify periods
-of declining payment approval performance.
-
-METRICS
--------
-1. Total Attempts
-2. Approved Attempts
-3. Declined Attempts
-4. Approval Rate (%)
-5. Decline Rate (%)
-
-CALCULATION
------------
-Approval Rate = Approved Attempts / Total Attempts * 100
-Decline Rate  = Declined Attempts / Total Attempts * 100
-
-GRAIN
------
-One row per calendar month.
-
-DATA SOURCE
------------
-dbo.FactTransactions
-
-NOTES
------
-- Measures payment attempts, including retries.
-- July 2025 contains data only through July 6.
-- July is a partial month and should not be compared directly
-  with complete months without accounting for the difference
-  in observation period.
+-- Q01: Monthly Approval Rate Trend
+-- Question: how does the approval rate change month by month?
+-- Period: the whole dataset (Jan 6 to Jul 6, 2025). Retries are included.
+-- July is a partial month (data only until July 6).
 */
 
 SELECT

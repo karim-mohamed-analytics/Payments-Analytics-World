@@ -1,32 +1,9 @@
 /*
-Project: Payments Analytics World
-Query ID: Q09
-Query Name: Daily Approval Rate Trend - Tier3 Bank 3
-Category: Approval Rate Investigation
-Tool: SQL Server
-
-Business Question:
-Did Tier3 Bank 3 experience a sudden Approval Rate deterioration
-around April 20, 2025, or was the decline already happening?
-
-Business Objective:
-Determine the timing and pattern of performance deterioration
-for Tier3 Bank 3 within Acquirer B Overflow Route.
-
-Metrics:
-- Total Attempts
-- Approved Attempts
-- Declined Attempts
-- Daily Approval Rate
-
-Grain: Transaction Date x Issuer
-Data Source: FactTransactions, DimAcquirer, DimRoute, DimIssuer
-
-Notes:
-- Analysis period: Jan 6 - Jul 6, 2025
-- Acquirer B Overflow Route only.
-- Tier3 Bank 3 only.
-- Retries are included.
+-- Q09: Daily Approval Rate Trend - Tier3 Bank 3
+-- Question: did Tier3 Bank 3 drop suddenly around April 20,
+-- or was it already falling before?
+-- Period: Jan 6 to Jul 6, 2025. Retries are included.
+-- Only Acquirer B Overflow Route and Tier3 Bank 3.
 */
 
 SELECT

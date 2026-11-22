@@ -1,40 +1,8 @@
 
 /*
-Project: Payments Analytics World
-Query ID: Q03
-Query Name: Daily Approval Rate Trend
-Category: Failure Isolation
-Tool: SQL Server 2022 (T-SQL)
-
-BUSINESS QUESTION
------------------
-On which date did the payment approval rate begin to decline?
-
-BUSINESS OBJECTIVE
-------------------
-Identify the timing and severity of the daily approval rate decline
-around the period of the weekly performance drop.
-
-METRICS
--------
-1. Total Attempts
-2. Approved Attempts
-3. Declined Attempts
-4. Approval Rate (%)
-5. Decline Rate (%)
-
-GRAIN
------
-One row per calendar date.
-
-DATA SOURCE
------------
-dbo.FactTransactions
-
-NOTES
------
-- Includes retries.
-- The date range is limited to 2025-04-14 through 2025-05-04.
+-- Q03: Daily Approval Rate Trend
+-- Question: on which date did the approval rate start to fall?
+-- Period: Jan 6 to Jul 6, 2025. Retries are included.
 */
 
 SELECT

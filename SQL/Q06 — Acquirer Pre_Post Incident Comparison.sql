@@ -1,35 +1,8 @@
 /*
-Project: Payments Analytics World
-Query ID: Q06
-Query Name: Acquirer Pre/Post Incident Comparison
-Category: Approval Rate Investigation
-Tool: SQL Server
-
-Business Question:
-Did any Acquirer experience significant performance deterioration
-after April 20, 2025?
-
-Business Objective:
-Identify whether Acquirer B was a major contributor
-to the overall Approval Rate decline.
-
-Metrics:
-- Before / After Total Attempts
-- Before / After Approved Attempts
-- Before / After Declined Attempts
-- Before / After Approval Rate
-- Before / After Transaction Mix
-- Before / After Share of Total Declines
-- Approval Rate Change (pp)
-- Transaction Mix Change (pp)
-
-Grain: Acquirer
-Data Source: FactTransactions, DimAcquirer
-
-Notes:
-- Before: Jan 6 - Apr 19, 2025
-- After: Apr 20 - Jul 6, 2025
-- Retries are included.
+-- Q06: Acquirer Pre/Post Incident Comparison
+-- Question: did any Acquirer get worse after April 20?
+-- Before: Jan 6 to Apr 19. After: Apr 20 to Jul 6, 2025. Retries are included.
+-- Per Acquirer: approval rate, transaction mix and share of total declines.
 */
 
 WITH AcquirerPerformance AS

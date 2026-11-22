@@ -1,50 +1,9 @@
 /*
-Project: Payments Analytics World
-Query ID: Q04
-Query Name: Pre vs Post Incident Performance
-Category: Failure Isolation
-Tool: SQL Server 2022 (T-SQL)
-
-BUSINESS QUESTION
------------------
-How did payment performance change before and after
-the suspected incident start date of 2025-04-20?
-
-BUSINESS OBJECTIVE
-------------------
-Measure the overall performance deterioration across
-the entire available dataset.
-
-METRICS
--------
-1. Total Attempts
-2. Approved Attempts
-3. Declined Attempts
-4. Approval Rate (%)
-5. Decline Rate (%)
-6. Average Daily Attempts
-7. Average Daily Declined Attempts
-
-GRAIN
------
-One row per comparison period.
-
-DATA SOURCE
------------
-dbo.FactTransactions
-
-COMPARISON PERIODS
-------------------
-Before: 2025-01-06 through 2025-04-19.
-After:  2025-04-20 through 2025-07-06.
-
-NOTES
------
-- Entire available dataset is included.
-- Periods have different durations.
-- Daily averages are included to account for duration differences.
-- Retries are included.
-- Comparison does not establish causation.
+-- Q04: Pre vs Post Incident Performance
+-- Question: how did performance change before and after April 20, 2025?
+-- Before: Jan 6 to Apr 19 (104 days). After: Apr 20 to Jul 6 (78 days).
+-- The periods have different lengths, so daily averages are included.
+-- Retries are included.
 */
 
 WITH PeriodData AS (
